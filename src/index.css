@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  text-align: center;
+}
+.create-task {
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.create-form{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  align-items: center;
+  border: solid;
+  border-radius: 5px;
+
+}
+
+.task-created{
+  display: flex;
+  flex-direction: row;
+}
+.divv-form{
+  display: flex;
+  justify-content: center;
+}
+.edit-formm{
+  display: flex;
+  justify-content: center;
+}
+
+
+.task-all{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1920px;
+justify-content: center;
+}
+
+.each-task{
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+  border: solid;
+  padding: 5px;
+  margin:5px;
+  width: 180px;
+  max-height: 300px;
+}
+
+.gizli{
+  display: none;
 }
